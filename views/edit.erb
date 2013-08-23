@@ -1,14 +1,16 @@
 <html>
   <head>
-    <title>IdeaBox</title>
+    <font color="#333300"><center><title>
+      IdeaBox
+    </font></center></title>
   </head>
+  <body style="background-color:#000000;">
   <body>
     <h1>IdeaBox</h1>
-
     <form action="/<%= id %>" method="POST">
-      <p>
-        Edit your Idea, brah!
-      </p>
+      <p><strong>
+        <font color="#0000FF">Edit your Idea, brah!</font>
+      </p></strong>
       <input type="hidden" name="_method" value="PUT" />
       <input type='text' name='idea_title' value="<%= idea.title %>"/><br/>
       <textarea name='idea_description'><%= idea.description %></textarea><br/>
